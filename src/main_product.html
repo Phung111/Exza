@@ -1,577 +1,755 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exza - Main Product</title>
-    <link rel="stylesheet" href="./dist/tailwing_output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div class="pri-px bg-black">
-        <div class="box-border flex h-12 flex-col justify-center">
-          <div class="items-center[&>*]:shrink-0 relative flex justify-between">
-            <a href="../index.html" class="mr-5 flex shrink-0 items-center"
-              ><img src="./img/logo.png" alt="logo" class="w-7"
-            /></a>
-            <nav>
-              <ul
-                class="hidden py-3 lg:flex [&_*:not(:last-child)]:mr-[51px] [&_*]:text-white"
-              >
-                <li><a href="./main_product.html">MotorMatic</a></li>
-                <li><a href="./product_page_presentation.html">HHOBD</a></li>
-                <li><a href="./support_HHOBD.html ">Accessories</a></li>
-                <li><a href="./support_new.html">Support</a></li>
-              </ul>
-            </nav>
-            <nav class="hidden items-center lg:flex">
-              <ul
-                class="hidden lg:flex [&>*]:px-6 [&_*:not(:last-child)]:border-r-[1px] [&_*:not(:last-child)]:border-r-gray-700"
-              >
-                <li>
-                  <a href="#"><img src="./img/search.svg" alt="search" /></a>
-                </li>
-                <li>
-                  <a href="./account.html"
-                    ><img src="./img/person.svg" alt="persion"
-                  /></a>
-                </li>
-                <li>
-                  <a href="./login.html"
-                    ><img src="./img/bag.svg" alt="bag"
-                  /></a>
-                </li>
-              </ul>
-            </nav>
-            <div
-              class="show_drop_menu flex cursor-pointer items-center text-[20px] text-white lg:hidden"
-            >
-              <i class="fa-solid fa-bars" onclick="showDropMenu()"></i>
-            </div>
-            <div
-              class="hide_drop_menu flex hidden cursor-pointer items-center text-[22px] text-white"
-            >
-              <i class="fa-solid fa-xmark" onclick="hideDropMenu()"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="drop_menu pri-px hidden flex-col bg-black text-white">
-        <nav>
-          <ul
-            class="sticky flex w-full flex-col [&>*]:my-2 [&>*]:flex [&>*]:rounded-xl [&_a]:w-full [&_a]:px-2 [&_a]:py-3"
-          >
-            <li class="hover:cursor-pointer hover:bg-white hover:text-black">
-              <a href="./main_product.html">MotorMatic</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exza - Main Product</title>
+  <link rel="stylesheet" href="../tailwind_output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="bg-black">
+    <div class="container mx-auto">
+      <div class="box-border flex h-11 items-center justify-between">
+        <a href="../index.html" class="mr-5 flex shrink-0 items-center py-4">
+          <img src="./img/logo.png" alt="logo" class="w-7" />
+        </a>
+        <nav class="h-full">
+          <ul class="hidden h-full items-center gap-14 lg:flex">
+            <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <a href="./main_product.html" class="h-full w-full flex items-center px-4">MotorMatic</a>
             </li>
-            <li class="hover:cursor-pointer hover:bg-white hover:text-black">
-              <a href="./product_page_presentation.html">HHOBD</a>
+            <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <a href="./product_page_presentation.html" class="h-full w-full flex items-center px-4">HHOBD</a>
             </li>
-            <li class="hover:cursor-pointer hover:bg-white hover:text-black">
-              <a href="./support_HHOBD.html">Accessories</a>
+            <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <a href="./support_HHOBD.html" class="h-full w-full flex items-center px-4">Accessories</a>
             </li>
-            <li class="hover:cursor-pointer hover:bg-white hover:text-black">
-              <a href="./support_new.html">Support</a>
+            <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <a href="./support_new.html" class="h-full w-full flex items-center px-4">Support</a>
             </li>
           </ul>
         </nav>
-        <nav class="flex items-center">
-          <ul
-            class="my-5 flex w-full [&>*]:px-6 [&_*:not(:last-child)]:border-r-[1px] [&_*:not(:last-child)]:border-r-gray-700"
-          >
-            <li class="w-full">
-              <a class="flex w-full justify-center" href="#"
-                ><img src="./img/search.svg" alt="search"
-              /></a>
+        <nav class="h-full">
+          <ul class="hidden h-full lg:flex items-center divide-x divide-gray-500">
+            <li class="flex items-center hover:bg-gray-500">
+              <a href="./support_new.html" class="h-full w-full flex items-center px-6 py-1 ">
+                <img src="./img/search.svg" alt="search" />
+              </a>
             </li>
-            <li class="w-full">
-              <a class="flex w-full justify-center" href="./account.html"
-                ><img src="./img/person.svg" alt="persion"
-              /></a>
+            <li class="flex items-center hover:bg-gray-500">
+              <a href="./account.html" class="h-full w-full flex items-center px-6 py-1 ">
+                <img src="./img/person.svg" alt="persion" />
+              </a>
             </li>
-            <li class="w-full">
-              <a class="flex w-full justify-center" href="./login.html"
-                ><img src="./img/bag.svg" alt="bag"
-              /></a>
+            <li class="flex items-center hover:bg-gray-500">
+              <a href="./login.html" class="h-full w-full flex items-center px-6 py-1 ">
+                <img src="./img/bag.svg" alt="bag" />
+              </a>
             </li>
           </ul>
         </nav>
+        <div class="show_drop_menu flex cursor-pointer items-center text-[20px] text-white lg:hidden">
+          <i class="fa-solid fa-bars" onclick="showDropMenu()"></i>
+        </div>
+        <div class="hide_drop_menu flex hidden cursor-pointer items-center text-[22px] text-white">
+          <i class="fa-solid fa-xmark" onclick="hideDropMenu()"></i>
+        </div>
       </div>
-    </header>
+    </div>
+    <div class="drop_menu absolute hidden  w-full flex-col bg-black text-white">
+      <nav>
+        <ul class="flex w-full flex-col  [&_a]:w-full [&_a]:px-2 [&_a]:py-3">
+          <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+            <a href="./main_product.html">MotorMatic</a>
+          </li>
+          <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+            <a href="./product_page_presentation.html">HHOBD</a>
+          </li>
+          <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+            <a href="./support_HHOBD.html">Accessories</a>
+          </li>
+          <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+            <a href="./support_new.html">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="h-[48px]">
+        <ul class="h-full w-full flex items-center divide-x divide-gray-500">
+          <li class="flex items-center justify-center w-full hover:bg-gray-500">
+            <a href="./support_new.html" class="h-full w-full flex justify-center px-6 py-1 ">
+              <img src="./img/search.svg" alt="search" />
+            </a>
+          </li>
+          <li class="flex items-center justify-center w-full hover:bg-gray-500">
+            <a href="./account.html" class="h-full w-full flex justify-center px-6 py-1 ">
+              <img src="./img/person.svg" alt="persion" />
+            </a>
+          </li>
+          <li class="flex items-center justify-center w-full hover:bg-gray-500">
+            <a href="./login.html" class="h-full w-full flex justify-center px-6 py-1 ">
+              <img src="./img/bag.svg" alt="bag" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <div class="bg-black">
-        <div class="flex justify-center pb-[10px] pt-[25px] [&>*]:w-[110px]">
-          <a
-            href="./support_HHOBD.html"
-            class="flex flex-col items-center justify-between"
-          >
-            <img src="./img/hhobd.svg" />
-            <p class="mt-5 text-[19px] text-gray-500">HHBOD</p>
+  <section class="bg-black">
+    <div class="container mx-auto">
+      <div class="pt-6 pb-2">
+        <div class="flex justify-center gap-[112px]">
+          <a class="flex flex-col items-center gap-[26px]" href="#">
+            <div class="h-[80px]">
+              <img src="./img/hhobd.svg" class="object-contain">
+            </div>
+            <p class="text-[19px] text-white/50 font-[600] leading-[24px] capitalize whitespace-nowrap">HHOBD</p>
           </a>
-          <a
-            href="./support_HHOBD.html"
-            class="ml-[140px] flex flex-col items-center justify-between"
-          >
-            <img src="./img/hhbodmini.svg" />
-            <p class="mt-5 text-[19px] text-gray-500">HHBOD Mini</p>
+          <a class="flex flex-col items-center gap-[26px]" href="#">
+            <div class="h-[80px]">
+              <img src="./img/hhbodmini.svg" class="object-contain">
+            </div>
+            <p class="text-[19px] text-white/50 font-[600] leading-[24px] capitalize whitespace-nowrap">HHOBD Mini</p>
           </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div
-        class="pri-px grid grid-cols-1 gap-[50px] bg-gray-100 py-[50px] lg:grid-cols-2 [&>*]:rounded-2xl"
-      >
-        <div
-          class="flex flex-col items-center justify-between bg-black pb-[2px] text-white"
-        >
-          <div class="flex flex-col items-center py-6">
-            <h4 class="mt-11">HHOBD</h4>
-            <h6 class="mt-3 text-[21px]">Plug in. Connect. Diagnosis.</h6>
-            <div class="btn-group xl:flex-row">
-              <button class="btn-b">
-                Further information<i class="fa-solid fa-angle-right"></i>
-              </button>
-              <button class="btn">
-                Buy<i class="fa-solid fa-angle-right"></i>
-              </button>
+  <section class="bg-gray-100">
+    <div class="container mx-auto">
+      <div class="py-[116px]">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-[50px]">
+          <div class="bg-black rounded-3xl w-[675px] h-[650px] overflow-hidden pt-[68px] px-[46px]">
+            <div class="flex justify-center">
+              <div class="flex flex-col items-center max-w-[590px]">
+                <h2 class="text-[56px] text-white font-[600] text-center">MotorMatic</h2>
+                <p class="text-[21px] text-white font-[400] mt-3 text-center">Diagnostics on a new level.</h5>
+                <div class="flex flex-col sm:flex-row gap-[18px] mt-6">
+                  <button
+                    class="px-8 py-3 whitespace-nowrap text-primary border border-primary rounded-full text-[21px] font-[400] leading-7 hover:text-white hover:bg-primary_dark">
+                    Further information
+                    <i class="fa-solid fa-angle-right text-[16px]"></i>
+                  </button>
+                  <button
+                    class="px-8 py-3 whitespace-nowrap text-white bg-primary rounded-full text-[21px] font-[400] leading-7 hover:bg-primary_dark">
+                    Buy
+                    <i class="fa-solid fa-angle-right text-[16px]"></i>
+                  </button>
+                </div>
+                <div class="mt-6 h-[360px]">
+                  <img src="./img/9.png" alt="motormatic" class="object-contain" />
+                </div>
+              </div>
             </div>
           </div>
-          <img src="./img/9.png" class="object-contain px-10" />
-        </div>
-        <div
-          class="flex flex-col items-center justify-between bg-white pb-[2px] text-black"
-        >
-          <div class="flex flex-col items-center py-6">
-            <h4 class="mt-11">HHOBD mini</h4>
-            <h6 class="mt-3 text-[21px]">Plug in. Connect. Diagnosis.</h6>
-            <div class="btn-group xl:flex-row">
-              <button class="btn-b">
-                Further information<i class="fa-solid fa-angle-right"></i>
-              </button>
-              <button class="btn">
-                Buy<i class="fa-solid fa-angle-right"></i>
-              </button>
+          <div class="bg-white rounded-3xl w-[675px] h-[650px] overflow-hidden pt-[68px] px-[46px]">
+            <div class="flex justify-center">
+              <div class="flex flex-col items-center max-w-[590px]">
+                <h2 class="text-[56px] text-black font-[600] text-center">MotorMatic</h2>
+                <p class="text-[21px] text-black font-[400] mt-3 text-center">Diagnostics on a new level.</h5>
+                <div class="flex flex-col sm:flex-row gap-[18px] mt-6">
+                  <button
+                    class="px-8 py-3 whitespace-nowrap text-primary border border-primary rounded-full text-[21px] font-[400] leading-7 hover:text-white hover:bg-primary_dark">
+                    Further information
+                    <i class="fa-solid fa-angle-right text-[16px]"></i>
+                  </button>
+                  <button
+                    class="px-8 py-3 whitespace-nowrap text-white bg-primary rounded-full text-[21px] font-[400] leading-7 hover:bg-primary_dark">
+                    Buy
+                    <i class="fa-solid fa-angle-right text-[16px]"></i>
+                  </button>
+                </div>
+                <div class="mt-6 h-[360px]">
+                  <img src="./img/11.png" alt="motormatic" class="object-contain" />
+                </div>
+              </div>
             </div>
-          </div>
-          <img src="./img/11.png" class="object-contain px-10" />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div
-        class="pri-px flex flex-col items-center justify-center bg-black pb-[116px] text-white"
-      >
-        <h1 class="mt-[70px] text-[48px]">First steps with the HHOBD</h1>
-        <img src="./img/12.png" class="mt-[70px]" />
-        <div class="mt-[70px] grid grid-cols-2 gap-[120px] xl:grid-cols-4">
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="flex w-[200px] flex-col justify-between text-center"
-            >
-              <div class="flex flex-col">
-                <img src="./img/box.svg" class="h-[39px]" />
-                <p class="mt-5 text-[19px] font-bold capitalize">
-                  free & contactless delivery
-                </p>
-              </div>
-              <p class="mt-5 px-3 text-[14px]">
-                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
-                amet.
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="flex w-[200px] flex-col justify-between text-center"
-            >
-              <div class="flex flex-col">
-                <img src="./img/euro.svg" class="h-[39px]" />
-                <p class="mt-5 text-[19px] font-bold capitalize">financing</p>
-              </div>
-              <p class="mt-5 px-3 text-[14px]">
-                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
-                amet.
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="flex w-[200px] flex-col justify-between text-center"
-            >
-              <div class="flex flex-col">
-                <img src="./img/chat.svg" class="h-[39px]" />
-                <p class="mt-5 text-[19px] font-bold capitalize">
-                  help with shopping
-                </p>
-              </div>
-              <p class="mt-5 px-3 text-[14px]">
-                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
-                amet.
-              </p>
-            </a>
-          </div>
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="flex w-[200px] flex-col justify-between text-center"
-            >
-              <div class="flex flex-col">
-                <img src="./img/menu.svg" class="h-[39px]" />
-                <p class="mt-5 text-[19px] font-bold capitalize">
-                  make them yours
-                </p>
-              </div>
-              <p class="mt-5 px-3 text-[14px]">
-                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
-                amet.
-              </p>
-            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="pri-px flex flex-col items-center pb-[135px]">
-        <h2 class="mt-[116px] text-center text-[48px]">
-          Welches HHOBD ist das richtige für dich?
-        </h2>
-        <div
-          class="mt-[75px] text-[13px] [&>*]:flex [&>*]:justify-between [&>*]:gap-8 [&>*]:text-center"
-        >
-          <div class="[&>*]:w-[300px]">
-            <img
-              src="./img/13.png"
-              class="h-[225px] shrink-0 object-contain px-[80px]"
-            />
-            <img
-              src="./img/14.png"
-              class="h-[225px] shrink-0 object-contain px-[105px] pt-[38px]"
-            />
+  <section class="bg-black">
+    <div class="container mx-auto">
+      <div class="py-[116px]">
+        <div class="flex flex-col items-center gap-[75px]">
+          <h2 class="text-[48px] text-white font-[600] leading-normal w-[690px] text-center tracking-[1.2px]">
+            HHOBD and HHOBD mini: Diagnostics redefined.
+          </h2>
+          <div class="max-h-[550px] overflow-hidden">
+            <img src="./img/12.png" class="object-cover">
           </div>
-          <div class="[&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <h3 class="mt-[57px] text-[26px] font-bold">HHOBD</h3>
-              <p class="mt-4">Ab 299 €</p>
-              <div>
-                <button class="btn mt-4 px-3 py-1 text-[11px]">Kaufen</button>
-              </div>
-              <p class="mb-[26px] mt-4 text-primary">Weitere Infos</p>
-            </div>
-            <div class="flex flex-col items-center">
-              <h3 class="mt-[57px] text-[26px] font-bold">HHOBD mini</h3>
-              <p class="mt-4">Ab 299 €</p>
-              <div>
-                <button class="btn mt-4 px-3 py-1 text-[11px]">Kaufen</button>
-              </div>
-              <p class="mb-[26px] mt-4 text-primary">Weitere Infos</p>
-            </div>
-          </div>
-          <div class="[&>*]:w-[300px]">
-            <hr class="opacity-100" />
-            <hr class="opacity-100" />
-          </div>
-          <div class="[&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <p class="mt-[26px] text-[19px]">45 mm oder 41 mm</p>
-              <p class="mt-4">Schwimmfest</p>
-              <p class="mt-4">Das bruchsicherste</p>
-              <p class="mt-4">Frontglas</p>
-              <div class="mt-4 flex justify-center">
-                <p>Staubgeschützt</p>
-                &nbsp
-                <p>nach IP6X</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center">
-              <p class="mt-[26px] text-[19px]">42 mm oder 38 mm</p>
-              <p class="mt-4">Schwimmfest</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <img src="./img/16.png" />
-              <p class="mt-4">Retina Display</p>
-              <p class="mt-2 text-gray-500">Über 30 % größer</p>
-              <p class="mt-2 text-gray-500">als bei der Series 3</p>
-            </div>
-            <div class="flex flex-col items-center">
-              <img src="./img/16.png" />
-              <p class="mt-4">Retina Display</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <img src="./img/17.png" />
-              <p class="mt-4">Blutsauerstoff App</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <img src="./img/18.png" />
-              <p class="mt-4">EKG App</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center px-8">
-              <img src="./img/19.png" />
-              <div class="mt-4 flex [&>*]:w-[50%]">
-                <p class="">Mitteilungen bei</p>
-                &nbsp
-                <p class="capitalize">hoher und niedriger Herzfrequenz</p>
-              </div>
-              <p class="mt-2 capitalize">Mitteilung bei unregelmäßigem</p>
-              <p class="mt-2 capitalize">Herzrhythmus</p>
-            </div>
-            <div class="flex flex-col items-center px-8">
-              <img src="./img/19.png" />
-              <div class="mt-4 flex [&>*]:w-[50%]">
-                <p class="">Mitteilungen bei</p>
-                &nbsp
-                <p class="capitalize">hoher und niedriger Herzfrequenz</p>
-              </div>
-              <p class="mt-2 capitalize">Mitteilung bei unregelmäßigem</p>
-              <p class="mt-2 capitalize">Herzrhythmus</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <img src="./img/20.png" />
-              <p class="mt-4 capitalize">Notruf SOS</p>
-              <p class="mt-4 capitalize">Internationale</p>
-              <p class="mt-2 capitalize">Notrufe 6</p>
-              <p class="mt-4 capitalize">Sturzerkennung</p>
-            </div>
-            <div class="flex flex-col items-center">
-              <img src="./img/20.png" />
-              <p class="mt-4 capitalize">Notruf SOS</p>
-            </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <div class="flex flex-col items-center">
-              <img src="./img/21.png" />
-              <p class="mt-4 capitalize">Mobilfunk verfügbar 7</p>
-              <p class="mt-4 capitalize">
-                Familienkonfiguration – mehr als eine
+          <div class="grid grid-cols-2 xl:grid-cols-4 gap-[120px] px-[120px]">
+            <div class="flex flex-col items-center gap-5">
+              <img src="./img/box.svg" class="h-[40px]">
+              <p
+                class="text-[19px] text-white font-[700] leading-[24px] tracking-[0.224px] h-[48px] text-center capitalize">
+                free & contactless delivery
               </p>
-              <p class="mt-2 capitalize">Apple Watch mit einem</p>
-              <p class="mt-2 capitalize">iPhone koppeln 8</p>
+              <p class="text-[14px] text-white font-[400] leading-[18px] text-center h-[56px]">
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+              </p>
             </div>
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <hr class="opacity-100" />
-            <hr class="opacity-100" />
-          </div>
-          <div class="mt-11 [&>*]:w-[300px]">
-            <h3 class="text-[24px] font-normal text-primary">
-              Alle Modelle vergleichen
-            </h3>
-            <h3 class="text-[24px] font-normal text-primary">HHOBD kaufen</h3>
+            <div class="flex flex-col items-center gap-5">
+              <img src="./img/euro.svg" class="h-[40px]">
+              <p
+                class="text-[19px] text-white font-[700] leading-[24px] tracking-[0.224px] text-center h-[48px] text-center capitalize">
+                financing
+              </p>
+              <p class="text-[14px] text-white font-[400] leading-[18px] text-center h-[56px]">
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <img src="./img/chat.svg" class="h-[40px]">
+              <p
+                class="text-[19px] text-white font-[700] leading-[24px] tracking-[0.224px] text-center h-[48px] text-center capitalize">
+                help with shopping
+              </p>
+              <p class="text-[14px] text-white font-[400] leading-[18px] text-center h-[56px]">
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <img src="./img/menu.svg" class="h-[40px]">
+              <p
+                class="text-[19px] text-white font-[700] leading-[24px] tracking-[0.224px] text-center h-[48px] text-center capitalize">
+                make them yours
+              </p>
+              <p class="text-[14px] text-white font-[400] leading-[18px] text-center h-[56px]">
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div
-        class="flex flex-col items-center bg-gray-100 pb-[76px] text-center md:px-14 xl:px-[130px]"
-      >
-        <h2 class="mt-[106px]">The best reason for a smart OBD2 device</h2>
-        <div
-          class="mt-[76px] flex w-full justify-between bg-white md:pl-14 xl:pl-[100px]"
-        >
-          <div
-            class="flex w-[350px] flex-col items-center justify-center text-center"
-          >
-            <h3 class="text-[48px] font-medium">MagSafe</h3>
-            <p class="mt-6 px-[50px] text-[21px]">
-              Perfekt mit magnetischem Case, Wallet oder beidem. Und schneller
-              beim kabellosen Laden.
+  <section class="bg-white">
+    <div class="container mx-auto">
+      <div class=" py-[116px]">
+        <div class="flex flex-col items-center gap-[75px]">
+          <h2 class="text-[48px] text-black font-[600] leading-[52px] tracking-[0.144px] text-center">
+            Welches HHOBD ist das richtige für dich?
+          </h2>
+          <div class="flex gap-8">
+            <div class="flex flex-col gap-11 w-[300px]">
+              <div class="px-[36px] h-[225px]">
+                <img src="./img/13.png" class="object-contain w-full h-full">
+              </div>
+              <div class="px-[36px] h-[150px]">
+                <div class="flex flex-col items-center gap-4">
+                  <p class="text-black text-[26px] font-[700] leading-normal -tracking-[1px]">
+                    HHOBD
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px]">
+                    Ab 299 €
+                  </p>
+                  <button class="bg-primary hover:bg-primary_dark rounded-full px-4 py-1">
+                    <p class="text-white text-[11px] font-[400] leading-[16px] tracking-[0.12px]">Kaufen</p>
+                  </button>
+                  <a href="#"
+                    class="text-primary hover:text-primary_dark text-[13px] font-[400] leading-[20px] tracking-[0.224px]">
+                    Weitere Infos
+                  </a href="#">
+                </div>
+              </div>
+              <hr>
+              <div class="px-[36px] h-[120px]">
+                <div class="flex flex-col items-center gap-3">
+                  <p class="text-black text-[19px] font-[400] leading-[23px] tracking-[0.224px] text-center">
+                    45 mm oder 41 mm
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Schwimmfest
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Das bruchsicherste Frontglas
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Staubgeschützt nach IP6X
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[130px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[53px] max-h-[58px]">
+                    <img src="./img/16.png" class="object-contain">
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                      Retina Display
+                    </p>
+                    <p class="text-black/50 text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                      Über 30 % größer
+                    </p>
+                    <p class="text-black/50 text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                      als bei der Series 3
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="px-[36px] h-[75px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/17.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Blutsauerstoff App
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[75px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/18.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Blutsauerstoff App
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[130px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/19.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Mitteilungen bei hoher und niedriger Herzfrequenz
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Mitteilungen bei Herzfrequenz
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[140px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/20.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Notruf SOS
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Internationale Notrufe
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Sturzerkennung
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[150px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/21.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Mobilfunk verfügbar 7
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center ">
+                    Familienkonfiguration – mehr als eine Apple Watch mit einem Apple Watch mit einem
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="flex justify-center">
+                <a href="#"
+                  class="text-primary hover:text-primary_dark text-[24px] font-[400] leading-[32px] tracking-[0.224px] text-center whitespace-nowrap">
+                  Alle Modelle vergleichen
+                </a href="#">
+              </div>
+            </div>
+            <div class="flex flex-col gap-11 w-[300px]">
+              <div class="px-[36px] h-[225px]">
+                <img src="./img/14.png" class="object-contain w-full h-full">
+              </div>
+              <div class="px-[36px] h-[150px]">
+                <div class="flex flex-col items-center gap-4">
+                  <p class="text-black text-[26px] font-[700] leading-normal -tracking-[1px]">
+                    HHOBD
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px]">
+                    Ab 299 €
+                  </p>
+                  <button class="bg-primary hover:bg-primary_dark rounded-full px-4 py-1">
+                    <p class="text-white text-[11px] font-[400] leading-[16px] tracking-[0.12px]">Kaufen</p>
+                  </button>
+                  <a href="#"
+                    class="text-primary hover:text-primary_dark text-[13px] font-[400] leading-[20px] tracking-[0.224px]">
+                    Weitere Infos
+                  </a href="#">
+                </div>
+              </div>
+              <hr>
+              <div class="px-[36px] h-[120px]">
+                <div class="flex flex-col items-center gap-3">
+                  <p class="text-black text-[19px] font-[400] leading-[23px] tracking-[0.224px] text-center">
+                    45 mm oder 41 mm
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Schwimmfest
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[130px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[53px] max-h-[58px]">
+                    <img src="./img/16.png" class="object-contain">
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                      Retina Display
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="px-[36px] h-[75px]">
+
+              </div>
+              <div class="px-[36px] h-[75px]">
+
+              </div>
+              <div class="px-[36px] h-[130px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/19.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Mitteilungen bei hoher und niedriger Herzfrequenz
+                  </p>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Mitteilungen bei Herzfrequenz
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[140px]">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="max-w-[42px] max-h-[42px]">
+                    <img src="./img/20.png" alt="object-contain">
+                  </div>
+                  <p class="text-black text-[13px] font-[400] leading-[20px] tracking-[0.224px] text-center">
+                    Notruf SOS
+                  </p>
+                </div>
+              </div>
+              <div class="px-[36px] h-[150px]">
+
+              </div>
+              <hr>
+              <div class="flex justify-center">
+                <a href="#"
+                  class="text-primary hover:text-primary_dark text-[24px] font-[400] leading-[32px] tracking-[0.224px] text-center whitespace-nowrap">
+                  HHOBD kaufen
+                </a href="#">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100">
+    <div class="container mx-auto">
+      <div class="py-[116px]">
+        <div class="flex flex-col items-center gap-[76px]">
+          <div class="flex flex-col items-center gap-[76px]">
+            <h2 class="text-black text-[56px] font-[600] leading-normal tracking-[0.224px] text-center">
+              The best reason for a smart OBD2 device
+            </h2>
+            <div class="bg-white relative z-10 rounded-3xl w-full h-[600px] overflow-hidden">
+              <div class="mt-[135px] ml-[225px]">
+                <div class="relative z-10 w-[330px]">
+                  <div class="absolute flex lg:hidden bg-black/50 blur-[50px] w-full h-full"></div>
+                  <div class="relative z-10 flex flex-col items-center gap-5">
+                    <p
+                      class="text-white lg:text-black text-[48px] font-[400] leading-[52px] tracking-[0.114px] text-center">
+                      MagSafe
+                    </p>
+                    <div class="w-[250px]">
+                      <p
+                        class="text-white lg:text-black text-[21px] font-[400] leading-[29px] tracking-[0.231px] text-center">
+                        Perfekt mit magnetischem Case, Wallet oder beidem. Und schneller beim kabellosen Laden.
+                      </p>
+                    </div>
+                    <a href="#"
+                      class="text-primary hover:text-primary_dark text-[21px] font-[400] leading-[29px] tracking-[0.231px] text-center">
+                      MagSafe Zubehör kaufen
+                    </a href="#">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute z-5 right-0 top-0">
+                <div class="py-[60px]">
+                  <img src="./img/22.png" class="object-contain">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-[76px]">
+            <h2 class="text-black text-[56px] font-[600] leading-normal tracking-[0.224px] text-center">
+              The best reason for a smart OBD2 device
+            </h2>
+            <div class="bg-white relative z-10 rounded-3xl w-full h-[600px] overflow-hidden">
+              <div class="mt-[135px] ml-[225px]">
+                <div class="relative z-10 w-[330px]">
+                  <div class="absolute flex lg:hidden bg-black/50 blur-[50px] w-full h-full"></div>
+                  <div class="relative z-10 flex flex-col items-center gap-5">
+                    <p
+                      class="text-white lg:text-black text-[48px] font-[400] leading-[52px] tracking-[0.114px] text-center">
+                      OBD2 Extension cable
+                    </p>
+                    <div class="w-[250px]">
+                      <p
+                        class="text-white lg:text-black text-[21px] font-[400] leading-[29px] tracking-[0.231px] text-center">
+                        Perfekt mit magnetischem Case, Wallet oder beidem. Und schneller beim kabellosen Laden.
+                      </p>
+                    </div>
+                    <a href="#"
+                      class="text-primary hover:text-primary_dark text-[21px] font-[400] leading-[29px] tracking-[0.231px] text-center">
+                      MagSafe Zubehör kaufen
+                    </a href="#">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute z-5 right-0 top-0">
+                <div class="py-[60px]">
+                  <img src="./img/23.png" class="object-contain">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-black text-white">
+    <div class="container mx-auto">
+      <div class="pt-14 pb-4 divide-y-[0.5px] divide-white/20">
+        <div class="pb-11">
+          <div class="flex flex-col gap-3">
+            <p class="text-[12px] text-white/60 font-[400] leading-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+              nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
+              nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
+              pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
+              magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
+              Quisque quis bibendum tellus pulvinar iaculis at sapien.
             </p>
-            <p class="mt-6 px-[50px] text-[21px] text-primary">
-              MagSafe Zubehör kaufen
+            <p class="text-[12px] text-white/60 font-[400] leading-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+              nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
+              nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
+              pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
+              magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
+              Quisque quis bibendum tellus pulvinar iaculis at sapien. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+              Arcu ut sit amet vitae magna turpis.
             </p>
           </div>
-          <img src="./img/22.png" class="h-[473px] py-[58px]" />
         </div>
-        <h2 class="mt-[106px]">Suitable accessories</h2>
-        <div
-          class="mt-[76px] flex w-full justify-between bg-white md:pl-14 xl:pl-[100px]"
-        >
-          <div
-            class="flex w-[350px] flex-col items-center justify-center text-center"
-          >
-            <h3 class="text-[48px] font-medium">OBD2 Extension cable</h3>
-            <p class="mt-6 px-[50px] text-[21px]">
-              Perfekt mit magnetischem Case, Wallet oder beidem. Und schneller
-              beim kabellosen Laden.
-            </p>
-            <p class="mt-6 px-[50px] text-[21px] text-primary">
-              MagSafe Zubehör kaufen
-            </p>
+        <nav class="py-10">
+          <ul class="grid grid-cols-3 lg:grid-cols-6 gap-[66px]">
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    About EXZA
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    company
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Job offers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    guarantee
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    EXZA MotorMatics
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    Account
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Manage your EXZA ID
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    order status
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    For companies
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    EXZA and company
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Shop for business
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    EXZA values
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    AGB
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Right of withdrawal
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="flex flex-col gap-[9px]">
+                <li>
+                  <a href="#" class="text-[13px] text-white font-[600] capitalize leading-[16px]">
+                    shopping and more
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    MotorMatic
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    HHOBD
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-[11px] text-white font-[400] capitalize leading-[16px]">
+                    Equipment
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="pt-4">
+          <div class="flex flex-col-reverse lg:flex-row justify-between items-center">
+            <div class="flex items-center shrink-0">
+              <a href="../index.html" class="mr-5 flex shrink-0 items-center py-4">
+                <img src="./img/logo.png" alt="logo" class="w-7" />
+              </a>
+              <p class="text-[12px] text-white font-[400] leading-[16px]">
+                Copyright © 2021 EXZA. Alle Rechte vorbehalten.
+              </p>
+            </div>
+            <nav class="">
+              <ul class="flex justify-between divide-x divide-white/50">
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Warranty
+                  </a>
+                </li>
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Use of cookies
+                  </a>
+                </li>
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Terms of Use
+                  </a>
+                </li>
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Sales and Refund
+                  </a>
+                </li>
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Legal Notice
+                  </a>
+                </li>
+                <li class="px-[18px] flex items-center">
+                  <a href="#" class="text-[12px] text-white font-[400] leading-[16px] whitespace-nowrap">
+                    Sitemap
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <img src="./img/23.png" class="h-[473px]" />
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="md:px-res xl:px-pri bg-black pb-5 text-white">
-        <p class="pt-14 text-justify text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
-          nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
-          nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
-          pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
-          magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
-          Quisque quis bibendum tellus pulvinar iaculis at sapien.
-        </p>
-        <p class="pb-10 pt-3 text-justify text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
-          nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
-          nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
-          pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
-          magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
-          Quisque quis bibendum tellus pulvinar iaculis at sapien. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
-          Arcu ut sit amet vitae magna turpis.
-        </p>
-        <hr />
-        <div class="grid grid-cols-3 gap-16 pb-10 pt-10 lg:grid-cols-6">
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">About EXZA</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">company</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Job offers</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">guarantee</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Contact</p>
-            </a>
-          </div>
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">Services</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">EXZA MotorMatics</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Support</p>
-            </a>
-          </div>
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">Account</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Manage your EXZA ID</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">order status</p>
-            </a>
-          </div>
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">For companies</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">EXZA and company</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Shop for business</p>
-            </a>
-          </div>
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">About EXZA</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">AGB</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Privacy Policy</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Right of withdrawal</p>
-            </a>
-          </div>
-          <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
-            <a href="#">
-              <h6 class="py-1">About EXZA</h6>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">shopping and more</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">MotorMatic</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">HHOBD</p>
-            </a>
-            <a href="#">
-              <p class="py-1 text-[11px] capitalize">Equipment</p>
-            </a>
-          </div>
-        </div>
-        <hr class="pb-4" />
-        <div class="flex items-center">
-          <a href="#" class="mr-5 shrink-0"
-            ><img src="./img/logo.png" alt="logo" class="w-7"
-          /></a>
-          <p class="text-[12px]">
-            Copyright © 2021 EXZA. Alle Rechte vorbehalten.
-          </p>
-          <nav>
-            <ul
-              class="flex [&>*]:px-6 [&>*]:text-[11px] [&_*:not(:last-child)]:border-r-[1px] [&_*:not(:last-child)]:border-r-gray-700"
-            >
-              <a href="#">
-                <li>Warranty</li>
-              </a>
-              <a href="#">
-                <li>Use of cookies</li>
-              </a>
-              <a href="#">
-                <li>Terms of Use</li>
-              </a>
-              <a href="#">
-                <li>Sales and Refund</li>
-              </a>
-              <a href="#">
-                <li>Legal Notice</li>
-              </a>
-              <a href="#">
-                <li>Sitemap</li>
-              </a>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
+  <script src="./drop_menu.js"></script>
+</body>
 
-    <script src="./drop_menu.js"></script>
-  </body>
 </html>
