@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exza - Comapre</title>
+    <link rel="stylesheet" href="../tailwind_output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg-black">
+        <div class="container mx-auto">
+            <div class="box-border flex h-11 items-center justify-between">
+                <a href="../index.html" class="mr-5 flex shrink-0 items-center py-4">
+                    <img src="./img/logo.png" alt="logo" class="w-7" />
+                </a>
+                <nav class="">
+                    <ul class="hidden gap-14 lg:flex">
+                        <li class="shrink-0 hover:bg-gray-500">
+                            <a href="./main_product.html" class="flex h-full w-full items-center px-4">
+                                <p class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white">
+                                    MotorMatic
+                                </p>
+                            </a>
+                        </li>
+                        <li class="shrink-0 hover:bg-gray-500">
+                            <a href="./main_product.html" class="flex h-full w-full items-center px-4">
+                                <p class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white">
+                                    HHOBD
+                                </p>
+                            </a>
+                        </li>
+                        <li class="shrink-0 hover:bg-gray-500">
+                            <a href="./main_product.html" class="flex h-full w-full items-center px-4">
+                                <p class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white">
+                                    Accessories
+                                </p>
+                            </a>
+                        </li>
+                        <li class="shrink-0 hover:bg-gray-500">
+                            <a href="./main_product.html" class="flex h-full w-full items-center px-4">
+                                <p class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white">
+                                    Support
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="h-full">
+                    <ul class="hidden h-full items-center divide-x divide-gray-500 lg:flex">
+                        <li class="flex shrink-0 items-center hover:bg-gray-500">
+                            <a href="./support_new.html" class="flex h-full w-full items-center px-6 py-1">
+                                <img src="./img/search.svg" alt="search" />
+                            </a>
+                        </li>
+                        <li class="flex shrink-0 items-center hover:bg-gray-500">
+                            <a href="./account.html" class="flex h-full w-full items-center px-6 py-1">
+                                <img src="./img/person.svg" alt="persion" />
+                            </a>
+                        </li>
+                        <li class="flex shrink-0 items-center hover:bg-gray-500">
+                            <a href="./login.html" class="flex h-full w-full items-center px-6 py-1">
+                                <img src="./img/bag.svg" alt="bag" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="show_drop_menu flex cursor-pointer items-center px-3 text-[20px] text-white lg:hidden">
+                    <i class="fa-solid fa-bars" onclick="showDropMenu()"></i>
+                </div>
+                <div class="hide_drop_menu flex hidden cursor-pointer items-center px-3 text-[22px] text-white">
+                    <i class="fa-solid fa-xmark" onclick="hideDropMenu()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="drop_menu absolute hidden w-full flex-col bg-black text-white">
+            <nav>
+                <ul class="flex w-full flex-col [&_a]:w-full [&_a]:px-2 [&_a]:py-3">
+                    <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+                        <a href="./main_product.html">MotorMatic</a>
+                    </li>
+                    <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+                        <a href="./product_page_presentation.html">HHOBD</a>
+                    </li>
+                    <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+                        <a href="./support_HHOBD.html">Accessories</a>
+                    </li>
+                    <li class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black">
+                        <a href="./support_new.html">Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="h-[48px]">
+                <ul class="flex h-full w-full items-center divide-x divide-gray-500">
+                    <li class="flex w-full items-center justify-center hover:bg-gray-500">
+                        <a href="./support_new.html" class="flex h-full w-full justify-center px-6 py-1">
+                            <img src="./img/search.svg" alt="search" />
+                        </a>
+                    </li>
+                    <li class="flex w-full items-center justify-center hover:bg-gray-500">
+                        <a href="./account.html" class="flex h-full w-full justify-center px-6 py-1">
+                            <img src="./img/person.svg" alt="persion" />
+                        </a>
+                    </li>
+                    <li class="flex w-full items-center justify-center hover:bg-gray-500">
+                        <a href="./login.html" class="flex h-full w-full justify-center px-6 py-1">
+                            <img src="./img/bag.svg" alt="bag" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-white">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-start md:flex-row md:items-center md:justify-between">
+                <a href="#" class="shrink-0">
+                    <p class="text-[21px] font-semibold">HHOBD</p>
+                </a>
+                <div class="flex shrink-0 items-center justify-between gap-[35px]">
+                    <nav>
+                        <ul class="flex items-center gap-11">
+                            <li>
+                                <a href="./product_page_presentation.html" class="">
+                                    <p
+                                        class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-gray-400">
+                                        overview
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./technical_specifications.html">
+                                    <p
+                                        class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-gray-400">
+                                        Technical specifications
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./comapre.html">
+                                    <p
+                                        class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-black">
+                                        Comapre
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex items-center">
+                        <a href="./product_page_inner.html">
+                            <button
+                                class="flex items-center gap-[6px] rounded-full bg-primary px-[15px] py-2 text-white hover:bg-primary_dark">
+                                <p class="text-[13px] font-[400] capitalize tracking-[1.23px]">
+                                    Buy
+                                </p>
+                                <i class="fa-solid fa-angle-right text-[10px]"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </section>
+
+    <section class="bg-white py-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center gap-6">
+                <h2 class="text-center text-[56px] font-[700] leading-[101px] tracking-[1.44px] text-black">
+                    Compare HHOBD models
+                </h2>
+                <div class="flex flex-col gap-[18px] sm:flex-row">
+                    <button
+                        class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white">
+                        All Type
+                        <i class="fa-solid fa-angle-right text-[16px]"></i>
+                    </button>
+                </div>
+                <p class="text-[21px] font-[400] leading-[32px] tracking-[0.216px] text-black">
+                    Need help choosing?
+                    <a href="#" class="text-primary hover:text-primary_dark">Chat with our Specialists</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12">
+        <div class="container mx-auto">
+            <div class="grid w-full grid-cols-3 gap-8">
+                <div class="flex flex-col divide-y-[0.5px] divide-black/30">
+                    <div class="flex flex-col items-center py-7">
+                        <select class="form-select block w-full rounded-xl border p-5" name="HHOBD" id="HHOBD">
+                            <option value="HHOBD">HHOBD</option>
+                            <option value="HHOBD">HHOBD</option>
+                            <option value="HHOBD">HHOBD</option>
+                            <option value="HHOBD">HHOBD</option>
+                        </select>
+                        <img src="./img/28.png" class="mt-top h-[300px] object-contain" />
+                        <ul class="flex w-full justify-evenly">
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-black outline outline-2 outline-offset-4 outline-primary hover:cursor-pointer">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Black</p>
+                            </li>
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-purple-500 hover:cursor-pointer hover:outline outline-2 outline-offset-4 outline-primary">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Purple</p>
+                            </li>
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-blue-500 hover:cursor-pointer hover:outline outline-2 outline-offset-4 outline-primary">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Blue</p>
+                            </li>
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-gray-500 hover:cursor-pointer hover:outline outline-2 outline-offset-4 outline-primary">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Gray</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 py-7">
+                        <p class="text-[21px] font-[600] leading-[60px] tracking-[0.28px] text-black">
+                            €612.70
+                        </p>
+                        <div>
+                            <button
+                                class="whitespace-nowrap rounded-full bg-primary px-8 py-3 text-[21px] font-[400] leading-7 text-white hover:bg-primary_dark hover:text-white">
+                                Buy
+                                <i class="fa-solid fa-angle-right text-[16px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col divide-y-[0.5px] divide-black/30">
+                    <div class="flex flex-col items-center py-7">
+                        <select class="form-select block w-full rounded-xl border p-5" name="HHOBD" id="HHOBD">
+                            <option value="HHOBD">HHOBD Mini</option>
+                            <option value="HHOBD">HHOBD Mini</option>
+                            <option value="HHOBD">HHOBD Mini</option>
+                            <option value="HHOBD">HHOBD Mini</option>
+                        </select>
+                        <img src="./img/29.png" class="mt-top h-[300px] object-contain" />
+                        <ul class="flex w-full justify-evenly">
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-black outline outline-2 outline-offset-4 outline-primary hover:cursor-pointer">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Black</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 py-7">
+                        <p class="text-[21px] font-[600] leading-[60px] tracking-[0.28px] text-black">
+                            €612.70
+                        </p>
+                        <div>
+                            <button
+                                class="whitespace-nowrap rounded-full bg-primary px-8 py-3 text-[21px] font-[400] leading-7 text-white hover:bg-primary_dark hover:text-white">
+                                Buy
+                                <i class="fa-solid fa-angle-right text-[16px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col divide-y-[0.5px] divide-black/30">
+                    <div class="flex flex-col items-center py-7">
+                        <select class="form-select block w-full rounded-xl border p-5" name="HHOBD" id="HHOBD">
+                            <option value="HHOBD">MotorMatic</option>
+                            <option value="HHOBD">MotorMatic</option>
+                            <option value="HHOBD">MotorMatic</option>
+                            <option value="HHOBD">MotorMatic</option>
+                        </select>
+                        <img src="./img/30.png" class="mt-top h-[300px] object-contain" />
+                        <ul class="flex w-full justify-evenly">
+                            <li class="flex flex-col items-center gap-5">
+                                <div
+                                    class="h-[46px] w-[46px] rounded-full bg-cyan-300 outline outline-2 outline-offset-4 outline-primary hover:cursor-pointer">
+                                </div>
+                                <p class="text-[13px] font-semibold text-gray-400">Black</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-center gap-3 py-7">
+                        <p class="text-[21px] font-[600] leading-[60px] tracking-[0.28px] text-black">
+                            €612.70
+                        </p>
+                        <div>
+                            <button
+                                class="whitespace-nowrap rounded-full bg-primary px-8 py-3 text-[21px] font-[400] leading-7 text-white hover:bg-primary_dark hover:text-white">
+                                Buy
+                                <i class="fa-solid fa-angle-right text-[16px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col divide-y-[0.5px] divide-black/20">
+                <div class="pb-9">
+                    <h3 class="text-[42px] font-[600] leading-[52px] tracking-[0.144px] text-black capitalize">
+                        Overview
+                    </h3>
+                </div>
+                <div class="pt-9">
+                    <div class="grid grid-cols-3">
+                        <div class="flex flex-col">
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p
+                                    class="text-[19px] font-[600] leading-[24px] tracking-[0.228px] text-black capitalize text-center">
+                                    free & contactless delivery
+                                </p>
+                                <p
+                                    class="text-[20px] font-[400] leading-[32px] tracking-[0.216px] text-black capitalize text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                                </p>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p
+                                    class="text-[19px] font-[600] leading-[24px] tracking-[0.228px] text-black capitalize text-center">
+                                    free & contactless delivery
+                                </p>
+                                <p
+                                    class="text-[20px] font-[400] leading-[32px] tracking-[0.216px] text-black capitalize text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                                </p>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p
+                                    class="text-[19px] font-[600] leading-[24px] tracking-[0.228px] text-black capitalize text-center">
+                                    free & contactless delivery
+                                </p>
+                                <p
+                                    class="text-[20px] font-[400] leading-[32px] tracking-[0.216px] text-black capitalize text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                                </p>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p
+                                    class="text-[19px] font-[600] leading-[24px] tracking-[0.228px] text-black capitalize text-center">
+                                    free & contactless delivery
+                                </p>
+                                <p
+                                    class="text-[20px] font-[400] leading-[32px] tracking-[0.216px] text-black capitalize text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="flex flex-col">
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <div class="h-[2px] w-[26px] bg-black"></div>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <div class="h-[2px] w-[26px] bg-black"></div>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <div class="h-[2px] w-[26px] bg-black"></div>
+                            </a>
+                            <a href="#" class="py-9 flex flex-col items-center justify-center gap-5 h-[350px]">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p
+                                    class="text-[19px] font-[600] leading-[24px] tracking-[0.228px] text-black capitalize text-center">
+                                    free & contactless delivery
+                                </p>
+                                <p
+                                    class="text-[20px] font-[400] leading-[32px] tracking-[0.216px] text-black capitalize text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px]">Overview</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col">
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col">
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col">
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box_blue.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                leo nibh elit diam.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                    <div class="flex h-full w-full items-center justify-center">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">audio technology</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                    </p>
+                    <div class="flex h-full w-full justify-center pt-[10%]">
+                        <div class="h-[2px] w-[26px] bg-black"></div>
+                    </div>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">chip</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">service</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">Dimensions and weight 4</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">chip</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mt-top pri-px pb-top">
+            <h2 class="mb-10 text-[42px] capitalize">service</h2>
+            <hr class="opacity-100" />
+            <div class="mt-10 grid w-full grid-cols-3 gap-8">
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                        nibh elit diam.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="[&>*:not(:first-child)]:mt-top flex flex-col [&>*]:h-[120px]">
+                    <p class="text-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-black text-white">
+            <div class="pri-px pt-[70px]">
+                <div class="grid grid-cols-2 gap-[120px] pb-16 pt-9 xl:grid-cols-4">
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/box.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    free & contactless delivery
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
+                                amet.
+                            </p>
+                            <p class="mt-5 px-3 text-[14px] text-primary">
+                                Further information
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/euro.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">financing</p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
+                                amet.
+                            </p>
+                            <p class="mt-5 px-3 text-[14px] text-primary">
+                                Further information
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/chat.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    help with shopping
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
+                                amet.
+                            </p>
+                            <p class="mt-5 px-3 text-[14px] text-primary">
+                                Further information
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#" class="flex w-[200px] flex-col justify-between text-center">
+                            <div class="flex flex-col">
+                                <img src="./img/menu.svg" class="h-[39px]" />
+                                <p class="mt-5 text-[19px] font-bold capitalize">
+                                    make them yours
+                                </p>
+                            </div>
+                            <p class="mt-5 px-3 text-[14px]">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit
+                                amet.
+                            </p>
+                            <p class="mt-5 px-3 text-[14px] text-primary">
+                                Further information
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pri-px bg-black pb-5 text-white">
+            <p class="pt-14 text-justify text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
+                nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
+                pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
+                magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
+                Quisque quis bibendum tellus pulvinar iaculis at sapien.
+            </p>
+            <p class="pb-10 pt-3 text-justify text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+                nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant neque
+                nullam pellentesque odio lectus lacus. Quisque quis bibendum tellus
+                pulvinar iaculis at sapien. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin leo nibh elit diam. Arcu ut sit amet vitae
+                magna turpis. Habitant neque nullam pellentesque odio lectus lacus.
+                Quisque quis bibendum tellus pulvinar iaculis at sapien. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                Arcu ut sit amet vitae magna turpis.
+            </p>
+            <hr />
+            <div class="grid grid-cols-3 gap-16 pb-10 pt-10 lg:grid-cols-6">
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">About EXZA</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">company</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Job offers</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">guarantee</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Contact</p>
+                    </a>
+                </div>
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">Services</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">EXZA MotorMatics</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Support</p>
+                    </a>
+                </div>
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">Account</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Manage your EXZA ID</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">order status</p>
+                    </a>
+                </div>
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">For companies</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">EXZA and company</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Shop for business</p>
+                    </a>
+                </div>
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">About EXZA</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">AGB</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Privacy Policy</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Right of withdrawal</p>
+                    </a>
+                </div>
+                <div class="flex flex-col [&>*:not(:last-child)]:mb-2">
+                    <a href="#">
+                        <h6 class="py-1">About EXZA</h6>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">shopping and more</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">MotorMatic</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">HHOBD</p>
+                    </a>
+                    <a href="#">
+                        <p class="py-1 text-[11px] capitalize">Equipment</p>
+                    </a>
+                </div>
+            </div>
+            <hr class="pb-4" />
+            <div class="flex items-center">
+                <a href="#" class="mr-5 shrink-0"><img src="./img/logo.png" alt="logo" class="w-7" /></a>
+                <p class="text-[12px]">
+                    Copyright © 2021 EXZA. Alle Rechte vorbehalten.
+                </p>
+                <nav>
+                    <ul
+                        class="flex [&>*]:px-6 [&>*]:text-[11px] [&_*:not(:last-child)]:border-r-[1px] [&_*:not(:last-child)]:border-r-gray-700">
+                        <a href="#">
+                            <li>Warranty</li>
+                        </a>
+                        <a href="#">
+                            <li>Use of cookies</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms of Use</li>
+                        </a>
+                        <a href="#">
+                            <li>Sales and Refund</li>
+                        </a>
+                        <a href="#">
+                            <li>Legal Notice</li>
+                        </a>
+                        <a href="#">
+                            <li>Sitemap</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./drop_menu.js"></script>
+</body>
+
+</html>

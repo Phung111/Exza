@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exza - Home</title>
-    <link rel="stylesheet" href="./tailwind_output.css" />
+    <title>Exza - Technical specifications</title>
+    <link rel="stylesheet" href="../tailwind_output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,38 +18,58 @@
     <header class="bg-black">
       <div class="container mx-auto">
         <div class="box-border flex h-11 items-center justify-between">
-          <a href="./index.html" class="mr-5 flex shrink-0 items-center py-4">
-            <img src="./src/img/logo.png" alt="logo" class="w-7" />
+          <a href="../index.html" class="mr-5 flex shrink-0 items-center py-4">
+            <img src="./img/logo.png" alt="logo" class="w-7" />
           </a>
-          <nav class="h-full">
-            <ul class="hidden h-full items-center gap-14 lg:flex">
-              <li class="flex h-full items-center text-white hover:bg-gray-500">
+          <nav class="">
+            <ul class="hidden gap-14 lg:flex">
+              <li class="shrink-0 hover:bg-gray-500">
                 <a
-                  href="./src/main_product.html"
+                  href="./main_product.html"
                   class="flex h-full w-full items-center px-4"
-                  >MotorMatic</a
                 >
+                  <p
+                    class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white"
+                  >
+                    MotorMatic
+                  </p>
+                </a>
               </li>
-              <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <li class="shrink-0 hover:bg-gray-500">
                 <a
-                  href="./src/product_page_presentation.html"
+                  href="./main_product.html"
                   class="flex h-full w-full items-center px-4"
-                  >HHOBD</a
                 >
+                  <p
+                    class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white"
+                  >
+                    HHOBD
+                  </p>
+                </a>
               </li>
-              <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <li class="shrink-0 hover:bg-gray-500">
                 <a
-                  href="./src/support_HHOBD.html"
+                  href="./main_product.html"
                   class="flex h-full w-full items-center px-4"
-                  >Accessories</a
                 >
+                  <p
+                    class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white"
+                  >
+                    Accessories
+                  </p>
+                </a>
               </li>
-              <li class="flex h-full items-center text-white hover:bg-gray-500">
+              <li class="shrink-0 hover:bg-gray-500">
                 <a
-                  href="./src/support_new.html"
+                  href="./main_product.html"
                   class="flex h-full w-full items-center px-4"
-                  >Support</a
                 >
+                  <p
+                    class="text-[13px] font-[400] leading-[44px] tracking-[0.224px] text-white"
+                  >
+                    Support
+                  </p>
+                </a>
               </li>
             </ul>
           </nav>
@@ -57,39 +77,39 @@
             <ul
               class="hidden h-full items-center divide-x divide-gray-500 lg:flex"
             >
-              <li class="flex items-center hover:bg-gray-500">
+              <li class="flex shrink-0 items-center hover:bg-gray-500">
                 <a
-                  href="./src/support_new.html"
+                  href="./support_new.html"
                   class="flex h-full w-full items-center px-6 py-1"
                 >
-                  <img src="./src/img/search.svg" alt="search" />
+                  <img src="./img/search.svg" alt="search" />
                 </a>
               </li>
-              <li class="flex items-center hover:bg-gray-500">
+              <li class="flex shrink-0 items-center hover:bg-gray-500">
                 <a
-                  href="./src/account.html"
+                  href="./account.html"
                   class="flex h-full w-full items-center px-6 py-1"
                 >
-                  <img src="./src/img/person.svg" alt="persion" />
+                  <img src="./img/person.svg" alt="persion" />
                 </a>
               </li>
-              <li class="flex items-center hover:bg-gray-500">
+              <li class="flex shrink-0 items-center hover:bg-gray-500">
                 <a
-                  href="./src/login.html"
+                  href="./login.html"
                   class="flex h-full w-full items-center px-6 py-1"
                 >
-                  <img src="./src/img/bag.svg" alt="bag" />
+                  <img src="./img/bag.svg" alt="bag" />
                 </a>
               </li>
             </ul>
           </nav>
           <div
-            class="show_drop_menu flex cursor-pointer items-center text-[20px] text-white lg:hidden"
+            class="show_drop_menu flex cursor-pointer items-center px-3 text-[20px] text-white lg:hidden"
           >
             <i class="fa-solid fa-bars" onclick="showDropMenu()"></i>
           </div>
           <div
-            class="hide_drop_menu flex hidden cursor-pointer items-center text-[22px] text-white"
+            class="hide_drop_menu flex hidden cursor-pointer items-center px-3 text-[22px] text-white"
           >
             <i class="fa-solid fa-xmark" onclick="hideDropMenu()"></i>
           </div>
@@ -103,22 +123,22 @@
             <li
               class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black"
             >
-              <a href="./src/main_product.html">MotorMatic</a>
+              <a href="./main_product.html">MotorMatic</a>
             </li>
             <li
               class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black"
             >
-              <a href="./src/product_page_presentation.html">HHOBD</a>
+              <a href="./product_page_presentation.html">HHOBD</a>
             </li>
             <li
               class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black"
             >
-              <a href="./src/support_HHOBD.html">Accessories</a>
+              <a href="./support_HHOBD.html">Accessories</a>
             </li>
             <li
               class="my-2 flex rounded-xl hover:cursor-pointer hover:bg-gray-500 hover:text-black"
             >
-              <a href="./src/support_new.html">Support</a>
+              <a href="./support_new.html">Support</a>
             </li>
           </ul>
         </nav>
@@ -128,30 +148,30 @@
               class="flex w-full items-center justify-center hover:bg-gray-500"
             >
               <a
-                href="./src/support_new.html"
+                href="./support_new.html"
                 class="flex h-full w-full justify-center px-6 py-1"
               >
-                <img src="./src/img/search.svg" alt="search" />
+                <img src="./img/search.svg" alt="search" />
               </a>
             </li>
             <li
               class="flex w-full items-center justify-center hover:bg-gray-500"
             >
               <a
-                href="./src/account.html"
+                href="./account.html"
                 class="flex h-full w-full justify-center px-6 py-1"
               >
-                <img src="./src/img/person.svg" alt="persion" />
+                <img src="./img/person.svg" alt="persion" />
               </a>
             </li>
             <li
               class="flex w-full items-center justify-center hover:bg-gray-500"
             >
               <a
-                href="./src/login.html"
+                href="./login.html"
                 class="flex h-full w-full justify-center px-6 py-1"
               >
-                <img src="./src/img/bag.svg" alt="bag" />
+                <img src="./img/bag.svg" alt="bag" />
               </a>
             </li>
           </ul>
@@ -159,234 +179,316 @@
       </div>
     </header>
 
-    <div class="pri-px flex justify-center py-3">
-      <p>
-        <a href="#" class="text-primary">Buy online </a>and get help from our
-        Specialists, with free no-contact delivery and more.
-      </p>
-    </div>
-
-    <section class="bg-black pb-1 pt-11">
-      <div class="flex justify-center">
-        <div class="flex max-w-[600px] flex-col items-center">
-          <h2 class="text-center text-[56px] font-[600] text-white">
-            MotorMatic
-          </h2>
-          <p class="mt-3 text-center text-[21px] font-[400] text-white">
-            Diagnostics on a new level.
-          </p>
-          <div class="mt-6 flex flex-col gap-[18px] sm:flex-row">
-            <button
-              class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-            >
-              Further information
-              <i class="fa-solid fa-angle-right text-[16px]"></i>
-            </button>
-            <button
-              class="whitespace-nowrap rounded-full bg-primary px-8 py-3 text-[21px] font-[400] leading-7 text-white hover:bg-primary_dark"
-            >
-              Buy
-              <i class="fa-solid fa-angle-right text-[16px]"></i>
-            </button>
-          </div>
-          <div class="mt-6 h-[360px]">
-            <img
-              src="./src/img/4.png"
-              alt="motormatic"
-              class="h-full w-full object-contain"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="relative mt-2 overflow-hidden bg-stone-900">
-      <div class="relative z-10 py-20">
-        <div class="flex justify-center">
-          <div class="flex max-w-[590px] flex-col items-center">
-            <h2 class="text-center text-[56px] font-[600] text-white">
-              MotorMatic
-            </h2>
-            <p class="mt-3 text-center text-[21px] font-[400] text-white">
-              Diagnostics auf einem neuen Level.
-            </p>
-            <div class="mt-6 flex flex-col gap-[18px] sm:flex-row">
-              <button
-                class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-              >
-                Further information
-                <i class="fa-solid fa-angle-right text-[16px]"></i>
-              </button>
-              <button
-                class="whitespace-nowrap rounded-full bg-primary px-8 py-3 text-[21px] font-[400] leading-7 text-white hover:bg-primary_dark"
-              >
-                Buy
-                <i class="fa-solid fa-angle-right text-[16px]"></i>
-              </button>
-            </div>
-            <div class="mt-36 rounded-[22.5%] bg-black">
-              <img
-                src="./src/img/31.png"
-                alt="motormatic"
-                class="h-full w-full"
-              />
+    <section class="bg-white">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col items-start md:flex-row md:items-center md:justify-between"
+        >
+          <a href="#" class="shrink-0">
+            <p class="text-[21px] font-semibold">HHOBD</p>
+          </a>
+          <div class="flex shrink-0 items-center justify-between gap-[35px]">
+            <nav>
+              <ul class="flex items-center gap-11">
+                <li>
+                  <a href="./product_page_presentation.html" class="">
+                    <p
+                      class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-gray-400"
+                    >
+                      overview
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="./technical_specifications.html">
+                    <p
+                      class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-black"
+                    >
+                      Technical specifications
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="./comapre.html">
+                    <p
+                      class="text-[13px] font-[400] capitalize leading-[44px] tracking-[1.23px] text-gray-400"
+                    >
+                      Comapre
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center">
+              <a href="./product_page_inner.html">
+                <button
+                  class="flex items-center gap-[6px] rounded-full bg-primary px-[15px] py-2 text-white hover:bg-primary_dark"
+                >
+                  <p
+                    class="text-[13px] font-[400] capitalize tracking-[1.23px]"
+                  >
+                    Buy
+                  </p>
+                  <i class="fa-solid fa-angle-right text-[10px]"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="absolute -top-[20%] hidden lg:flex">
-        <div class="grid gap-10 pl-24 sm:grid-cols-1 xl:grid-cols-2">
-          <div class="flex flex-col gap-5 pt-16">
-            <img src="./src/img/5.png" />
-            <img src="./src/img/6.png" />
-          </div>
-          <div class="flex flex-col gap-5">
-            <img src="./src/img/7.png" />
-            <img src="./src/img/5.png" />
-          </div>
-        </div>
-        <div class="w-[500px] shrink-0"></div>
-        <div class="grid gap-10 pr-24 sm:grid-cols-1 xl:grid-cols-2">
-          <div class="flex flex-col gap-5 pt-16">
-            <img src="./src/img/5.png" />
-            <img src="./src/img/6.png" />
-          </div>
-          <div class="flex flex-col gap-5">
-            <img src="./src/img/7.png" />
-            <img src="./src/img/5.png" />
-          </div>
-        </div>
-      </div>
+      <hr />
     </section>
 
-    <section class="bg-white p-3">
-      <div class="grid gap-3 lg:grid-cols-2">
-        <div class="rounded-xl bg-gray-100 pb-12">
+    <section class="bg-white py-8">
+      <div class="mx-auto max-w-[800px]">
+        <div class="flex flex-col items-center">
           <div class="flex justify-center">
-            <div class="flex max-w-[590px] flex-col items-center">
-              <div class="mb-6 h-[360px]">
-                <img
-                  src="./src/img/8.png"
-                  alt="motormatic"
-                  class="h-full w-full object-contain"
-                />
-              </div>
-              <h2 class="text-center text-[56px] font-[600] text-black">
-                MotorMatic
-              </h2>
-              <p class="mt-3 text-center text-[21px] font-[400] text-black">
-                Diagnostics auf einem neuen Level.
-              </p>
-              <div class="mt-6 flex flex-col gap-[18px] lg:flex-row">
-                <button
-                  class="whitespace-nowrap rounded-full px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-                >
-                  Further information
-                  <i class="fa-solid fa-angle-right text-[16px]"></i>
-                </button>
-                <button
-                  class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-                >
-                  Buy
-                  <i class="fa-solid fa-angle-right text-[16px]"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-xl bg-gray-100 pt-12">
-          <div class="flex justify-center">
-            <div class="flex max-w-[590px] flex-col items-center">
-              <h2 class="text-center text-[56px] font-[600] text-black">
-                MotorMatic
-              </h2>
-              <p class="mt-3 text-center text-[21px] font-[400] text-black">
-                Diagnostics auf einem neuen Level.
-              </p>
-              <div class="mt-6 flex flex-col gap-[18px] lg:flex-row">
-                <button
-                  class="whitespace-nowrap rounded-full px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-                >
-                  Further information
-                  <i class="fa-solid fa-angle-right text-[16px]"></i>
-                </button>
-                <button
-                  class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-                >
-                  Buy
-                  <i class="fa-solid fa-angle-right text-[16px]"></i>
-                </button>
-              </div>
-              <div class="mt-6 h-[360px]">
-                <img
-                  src="./src/img/9.png"
-                  alt="motormatic"
-                  class="h-full w-full object-contain"
-                />
-              </div>
-            </div>
+            <img src="./img/24.png" class="object-contain" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="relative mx-3 h-[680px]">
-      <div class="absolute -z-10 h-full w-full">
-        <img src="./src/img/10.png" class="h-full w-full object-cover" />
-      </div>
-      <div class="relative flex h-full w-full items-center justify-center">
-        <div class="relative flex justify-center">
-          <div
-            class="absolute -z-[5] h-full w-full bg-black/60 blur-[50px]"
-          ></div>
-          <div class="flex max-w-[590px] flex-col items-center">
-            <h2 class="text-center text-[56px] font-[600] text-white">
-              Accessories
-            </h2>
-            <p class="mt-3 text-center text-[21px] font-[400] text-white">
-              Find the right accessories for your diagnostic device
-            </p>
-            <div class="mt-6 flex flex-col gap-[18px] sm:flex-row">
-              <button
-                class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-              >
-                Further information
-                <i class="fa-solid fa-angle-right text-[16px]"></i>
-              </button>
-              <button
-                class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
-              >
-                Buy
-                <i class="fa-solid fa-angle-right text-[16px]"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-white p-10">
-      <div class="flex justify-center">
-        <div class="flex max-w-[590px] flex-col items-center">
-          <div class="mb-6 max-h-[70px]">
-            <img
-              src="./src/img/logo2.png"
-              alt="motormatic"
-              class="h-full w-full"
-            />
-          </div>
-          <h2 class="text-center text-[33px] font-[700] text-black">
-            I would like to be informed about devices, news, tips and offers
-            from EXZA
-          </h2>
-          <div class="mt-6 flex flex-col gap-[18px] sm:flex-row">
-            <button
-              class="whitespace-nowrap rounded-full border border-primary px-8 py-3 text-[21px] font-[400] leading-7 text-primary hover:bg-primary_dark hover:text-white"
+    <section class="bg-white pb-[200px] pt-8">
+      <div class="container mx-auto">
+        <div class="flex flex-col divide-y-[0.5px] divide-black/20">
+          <div></div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
             >
-              Anmelden
-              <i class="fa-solid fa-angle-right text-[16px]"></i>
-            </button>
+              audio technology
+            </p>
+            <p
+              class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+              nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant
+              neque nullam pellentesque odio.
+            </p>
           </div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
+            >
+              sensors
+            </p>
+            <p
+              class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+              nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant
+              neque nullam pellentesque odio.
+            </p>
+          </div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
+            >
+              chip
+            </p>
+            <p
+              class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
+            >
+              Designed to be yours protect car.
+            </p>
+            <p
+              class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo
+              nibh elit diam. Arcu ut sit amet vitae magna turpis. Habitant
+              neque nullam pellentesque odio.
+            </p>
+          </div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
+            >
+              Designed to be yours protect car.
+            </p>
+            <div class="flex flex-col gap-[100px]">
+              <div class="flex">
+                <div class="flex flex-col items-center">
+                  <div class="relative h-[260px]">
+                    <img
+                      src="./img/13.png"
+                      class="h-full w-full object-contain"
+                    />
+                    <div
+                      class="absolute right-0 top-0 flex h-full translate-x-[120%] items-center"
+                    >
+                      <div class="h-full w-2 border-2 border-l-0"></div>
+                      <p
+                        class="ml-4 text-[20px]"
+                        style="writing-mode: vertical-rl"
+                      >
+                        30.79 mm
+                      </p>
+                    </div>
+                  </div>
+                  <div class="m-4 h-2 w-full border-2 border-t-0"></div>
+                  <p class="text-[20px]">30.79 mm</p>
+                </div>
+                <div class="ml-20 flex flex-col items-center">
+                  <img src="./img/34.png" class="h-[260px] object-contain" />
+                  <div class="m-4 h-2 w-full border-2 border-t-0"></div>
+                  <p class="text-[20px]">30.79 mm</p>
+                </div>
+              </div>
+              <p
+                class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                leo nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                Habitant neque nullam pellentesque odio.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-[45px] py-[68px] lg:gap-[90px]">
+            <p
+              class="w-[182px] text-[42px] font-[600] capitalize leading-[52px] tracking-[0.144px] lg:w-[370px]"
+            >
+              Designed to be yours protect car.
+            </p>
+            <div class="flex gap-[56px]">
+              <p
+                class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                leo nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                Habitant neque nullam pellentesque odio. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                Arcu ut sit amet vitae magna turpis. Habitant neque nullam
+                pellentesque odio.
+              </p>
+              <p
+                class="max-w-[350px] text-[20px] font-[400] capitalize leading-[32px] tracking-[0.216px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                leo nibh elit diam. Arcu ut sit amet vitae magna turpis.
+                Habitant neque nullam pellentesque odio. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Proin leo nibh elit diam.
+                Arcu ut sit amet vitae magna turpis. Habitant neque nullam
+                pellentesque odio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black">
+      <div class="container mx-auto">
+        <div class="divide-y-[0.5px] divide-white/20">
+          <div></div>
+          <div class="pb-16 pt-9">
+            <div class="grid grid-cols-2 gap-[120px] xl:grid-cols-4">
+              <div class="flex justify-center">
+                <a
+                  href="#"
+                  class="flex max-w-[200px] flex-col items-center gap-[10px] text-center"
+                >
+                  <img src="./img/box.svg" class="h-[39px] object-contain" />
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-white"
+                  >
+                    free & contactless delivery
+                  </p>
+                  <p
+                    class="text-[14px] font-[400] capitalize leading-[18px] tracking-[0.228px] text-white/50"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                    sit amet.
+                  </p>
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-primary"
+                  >
+                    Further information
+                  </p>
+                </a>
+              </div>
+              <div class="flex justify-center">
+                <a
+                  href="#"
+                  class="flex max-w-[200px] flex-col items-center gap-[10px] text-center"
+                >
+                  <img src="./img/box.svg" class="h-[39px] object-contain" />
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-white"
+                  >
+                    free & contactless delivery
+                  </p>
+                  <p
+                    class="text-[14px] font-[400] capitalize leading-[18px] tracking-[0.228px] text-white/50"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                    sit amet.
+                  </p>
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-primary"
+                  >
+                    Further information
+                  </p>
+                </a>
+              </div>
+              <div class="flex justify-center">
+                <a
+                  href="#"
+                  class="flex max-w-[200px] flex-col items-center gap-[10px] text-center"
+                >
+                  <img src="./img/box.svg" class="h-[39px] object-contain" />
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-white"
+                  >
+                    free & contactless delivery
+                  </p>
+                  <p
+                    class="text-[14px] font-[400] capitalize leading-[18px] tracking-[0.228px] text-white/50"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                    sit amet.
+                  </p>
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-primary"
+                  >
+                    Further information
+                  </p>
+                </a>
+              </div>
+              <div class="flex justify-center">
+                <a
+                  href="#"
+                  class="flex max-w-[200px] flex-col items-center gap-[10px] text-center"
+                >
+                  <img src="./img/box.svg" class="h-[39px] object-contain" />
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-white"
+                  >
+                    free & contactless delivery
+                  </p>
+                  <p
+                    class="text-[14px] font-[400] capitalize leading-[18px] tracking-[0.228px] text-white/50"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
+                    sit amet.
+                  </p>
+                  <p
+                    class="text-[19px] font-[600] capitalize leading-[24px] tracking-[0.228px] text-primary"
+                  >
+                    Further information
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -701,6 +803,6 @@
       </div>
     </footer>
 
-    <script src="./src/drop_menu.js"></script>
+    <script src="./drop_menu.js"></script>
   </body>
 </html>
