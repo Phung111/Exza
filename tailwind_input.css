@@ -7,11 +7,36 @@
 @layer base {
   html {
     font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+  }
+
+  h1 {
+    @apply text-center text-[96px] font-bold capitalize leading-[101.5px] tracking-[1.44px];
+  }
+
+  h2 {
+    @apply text-center text-[56px] font-semibold capitalize leading-[60px] tracking-[0.28px];
+  }
+
+  h3 {
+    @apply text-center text-[48px] font-semibold capitalize leading-[52px] tracking-[0.144px];
+  }
+
+  h4 {
+    @apply text-center text-[24px] font-medium capitalize leading-normal tracking-[0.144px] text-[24];
+  }
+
+  p {
+    @apply text-[14px] font-normal leading-[31px] tracking-[0.11px];
   }
 }
 
 @layer utilities {
   .container {
     @apply w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl;
+  }
+
+  .fa-angle-right {
+    @apply text-[10px];
   }
 }
